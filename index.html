@@ -4,20 +4,47 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+    <style>
+      /* Styling tambahan khusus index agar kontennya rapi di tengah */
+      .index-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 70vh;
+        padding: 20px;
+      }
+      .index-container h1 { font-size: 4rem; margin-bottom: 10px; color: #111827; }
+      .index-container h2 { font-size: 2rem; color: #4b5563; font-family: sans-serif; margin-bottom: 15px; }
+      .index-container p { font-size: 1.2rem; color: #6b7280; font-family: sans-serif;}
+    </style>
   </head>
   <body>
+
+    <!-- Nav Bar Atas -->
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <a href="page2.html">LEVEL 1 TASK 3</a>
+      <a href="page3.html">GLASSMORPHISM</a>
+      
+      <!-- Dropdown Level 2 -->
+      <div class="dropdown">
+        <button class="dropbtn">LEVEL 2 ▾</button>
+        <div class="dropdown-content">
+          <a href="level2-task1.html">Task 1</a>
+          <a href="level2-task2.html">Task 2</a>
+        </div>
+      </div>
     </nav>
-    <main>
+
+    <main class="index-container">
       <h1>Home page</h1>
+      <h2>Achmad Fathur Rokhman</h2>
+      <p>Koding Seleksi KODA Seleksi 9 Kloter 1</p>
     </main>
+
   </body>
 </html>

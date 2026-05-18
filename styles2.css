@@ -1,0 +1,72 @@
+body {
+    background-image: url('assets/picts/anime_office.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  /* OVERLAY BIAR KONTRAS */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+  }
+  
+  /* GLASS CARD */
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  /* NAV GLASS */
+  .glass-nav {
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* NAV LINK */
+  .nav-link {
+    color: white !important;
+    margin: 0 10px;
+    transition: 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #60a5fa !important;
+  }
+  
+  /* TEXT GLOBAL */
+  h1,
+  h3,
+  p {
+    color: white;
+  }
+  
+  .logo-float {
+    position: fixed;
+    top: 20px; /* di bawah navbar */
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .logo-float img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .logo-float img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
